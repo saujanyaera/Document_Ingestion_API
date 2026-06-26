@@ -1,4 +1,7 @@
-env
-__pycache__
-rag/__pycache__
-
+env/
+__pycache__/
+*.pyc
+.env
+temp/
+.idea/
+.vscode/
