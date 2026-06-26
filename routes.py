@@ -2,9 +2,9 @@ from fastapi import FastAPI, UploadFile, File
 from pydantic import Field
 import shutil
 from pydantic import BaseModel
-from pipeline import ingest_document
+from services.pipeline import ingest_document
 from rag.document_store import get_vectorstore
-from metadata_db import db, Metadata, app_flask
+from database.metadata_db import db, Metadata, app_flask
 import os
 
 app=FastAPI()
