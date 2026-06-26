@@ -42,6 +42,7 @@ def ingestion(file:UploadFile=File(...), query:str=''):
         
         db.session.add(
             Metadata(
+                # id=meta.get("id", ""),
                 author=meta.get("author", "unknown"),
                 creator=meta.get("creator", "unknown"),
                 page=meta.get("page", 0)
