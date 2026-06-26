@@ -12,8 +12,8 @@ app=FastAPI()
 
 
 class Ingest(BaseModel):
-    index_name:str='rag-index'
     query: str = Field(default='', description="User query for similarity search")
+    index_name:str='rag-index'
 
 @app.post('/uploads')
 def ingestion(file:UploadFile=File(...), query:str=''):

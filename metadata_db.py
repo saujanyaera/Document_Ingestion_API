@@ -9,7 +9,8 @@ app_flask.config['SQLALCHEMY_TRACK_NOTIFICATIONS']=False
 db=SQLAlchemy(app_flask)
 
 class Metadata(db.Model):
-    author=db.Column(db.String(180), nullable=False, primary_key=True)
+    id=db.Column(db.Integer(), primary_key=True)
+    author=db.Column(db.String(180), nullable=False)
     creator=db.Column(db.String(180), nullable=False)
     page=db.Column(db.Integer, nullable=False)
  

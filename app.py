@@ -13,7 +13,7 @@ db=SQLAlchemy(app)
 
 
 
-vectorstore=get_vectorstore(index_name)
+
 
 
 
